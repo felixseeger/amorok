@@ -8,7 +8,7 @@ dotenv.config();
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const appDir = path.join(__dirname, '..');
-const buildDir = path.join(__dirname, '../dist');
+const buildDir = path.join(__dirname, '../build');
 
 async function deploy() {
     console.log('Building project (includes all files from public/)...');
