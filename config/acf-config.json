@@ -1,0 +1,275 @@
+
+[
+    {
+        "key": "group_jesko_jets_config",
+        "title": "Jesko Jets Configuration",
+        "fields": [
+            {
+                "key": "field_hero_tab",
+                "label": "Hero Section",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_hero_title",
+                "label": "Hero Title",
+                "name": "hero_title",
+                "type": "text",
+                "default_value": "TRANSCEND THE ORDINARY",
+                "placeholder": "Enter main title"
+            },
+            {
+                "key": "field_hero_subtitle",
+                "label": "Hero Subtitle",
+                "name": "hero_subtitle",
+                "type": "textarea",
+                "default_value": "The ultimate expression of private flight.",
+                "rows": 3
+            },
+            {
+                "key": "field_mission_tab",
+                "label": "Mission Section",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_mission_title",
+                "label": "Mission Title",
+                "name": "mission_title",
+                "type": "text",
+                "default_value": "A Legacy of Precision"
+            },
+            {
+                "key": "field_mission_text",
+                "label": "Mission Text",
+                "name": "mission_text",
+                "type": "textarea",
+                "default_value": "Engineered for those who demand excellence without compromise. Jesko Jets bridges the gap between peak performance and unparalleled luxury.",
+                "rows": 4
+            },
+            {
+                "key": "field_interior_tab",
+                "label": "Interior Section",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_interior_title",
+                "label": "Interior Title",
+                "name": "interior_title",
+                "type": "text",
+                "default_value": "Sanctuary in the Sky"
+            },
+            {
+                "key": "field_interior_text",
+                "label": "Interior Text",
+                "name": "interior_text",
+                "type": "textarea",
+                "default_value": "Hand-stitched leather. Whisper-quiet acoustics. A cabin designed not just for travel, but for living.",
+                "rows": 4
+            },
+            {
+                "key": "field_about_tab",
+                "label": "About Section",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_about_title",
+                "label": "About Title",
+                "name": "about_title",
+                "type": "text",
+                "default_value": "Sanctuary in the Sky",
+                "placeholder": "About section headline"
+            },
+            {
+                "key": "field_about_text",
+                "label": "About Text",
+                "name": "about_text",
+                "type": "textarea",
+                "default_value": "Hand-stitched leather. Whisper-quiet acoustics. A cabin designed not just for travel, but for living.",
+                "rows": 6
+            },
+            {
+                "key": "field_about_subtitle",
+                "label": "About Subtitle",
+                "name": "about_subtitle",
+                "type": "text",
+                "default_value": ""
+            },
+            {
+                "key": "field_about_quote",
+                "label": "About Quote",
+                "name": "about_quote",
+                "type": "textarea",
+                "default_value": "",
+                "rows": 2
+            },
+            {
+                "key": "field_about_description",
+                "label": "About Description",
+                "name": "about_description",
+                "type": "textarea",
+                "default_value": "",
+                "rows": 4
+            },
+            {
+                "key": "field_about_image",
+                "label": "About Image",
+                "name": "about_image",
+                "type": "image",
+                "return_format": "url",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_about_stat_1",
+                "label": "About Stat 1",
+                "name": "about_stat_1",
+                "type": "text",
+                "wrapper": { "width": "33" }
+            },
+            {
+                "key": "field_about_stat_2",
+                "label": "About Stat 2",
+                "name": "about_stat_2",
+                "type": "text",
+                "wrapper": { "width": "33" }
+            },
+            {
+                "key": "field_about_stat_3",
+                "label": "About Stat 3",
+                "name": "about_stat_3",
+                "type": "text",
+                "wrapper": { "width": "33" }
+            },
+            {
+                "key": "field_stats_tab",
+                "label": "Stats Section",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_stat_1_label",
+                "label": "Stat 1 Label",
+                "name": "stat_1_label",
+                "type": "text",
+                "default_value": "RANGE",
+                "wrapper": {
+                    "width": "50"
+                }
+            },
+            {
+                "key": "field_stat_1_value",
+                "label": "Stat 1 Value",
+                "name": "stat_1_value",
+                "type": "text",
+                "default_value": "7,500 NM",
+                "wrapper": {
+                    "width": "50"
+                }
+            },
+            {
+                "key": "field_stat_2_label",
+                "label": "Stat 2 Label",
+                "name": "stat_2_label",
+                "type": "text",
+                "default_value": "MAX SPEED",
+                "wrapper": {
+                    "width": "50"
+                }
+            },
+            {
+                "key": "field_stat_2_value",
+                "label": "Stat 2 Value",
+                "name": "stat_2_value",
+                "type": "text",
+                "default_value": "MACH 0.925",
+                "wrapper": {
+                    "width": "50"
+                }
+            },
+            {
+                "key": "field_stat_3_label",
+                "label": "Stat 3 Label",
+                "name": "stat_3_label",
+                "type": "text",
+                "default_value": "ALTITUDE",
+                "wrapper": {
+                    "width": "50"
+                }
+            },
+            {
+                "key": "field_stat_3_value",
+                "label": "Stat 3 Value",
+                "name": "stat_3_value",
+                "type": "text",
+                "default_value": "51,000 FT",
+                "wrapper": {
+                    "width": "50"
+                }
+            },
+            {
+                "key": "field_stat_4_label",
+                "label": "Stat 4 Label",
+                "name": "stat_4_label",
+                "type": "text",
+                "default_value": "CAPACITY",
+                "wrapper": {
+                    "width": "50"
+                }
+            },
+            {
+                "key": "field_stat_4_value",
+                "label": "Stat 4 Value",
+                "name": "stat_4_value",
+                "type": "text",
+                "default_value": "19 GUESTS",
+                "wrapper": {
+                    "width": "50"
+                }
+            },
+            {
+                "key": "field_player_iframe",
+                "label": "Player Iframe",
+                "name": "player_iframe",
+                "type": "textarea",
+                "default_value": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/artist/5YddGvcDaUZc4zZ3UkcCli?utm_source=generator\" width=\"100%\" height=\"800\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\"></iframe>",
+                "rows": 6
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Configuration fields for Jesko Jets sections."
+    }
+]
