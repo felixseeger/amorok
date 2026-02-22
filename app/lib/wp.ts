@@ -1,4 +1,19 @@
-const WP_API_URL = import.meta.env.VITE_WP_API_URL || 'https://your-wordpress-site.com/wp-json/wp/v2';
+const DEFAULT_WP_API_URL = 'https://your-wordpress-site.com/wp-json/wp/v2';
+
+function normalizeWpApiUrl(rawUrl: string): string {
+    const candidate = (rawUrl || '').trim() || DEFAULT_WP_API_URL;
+    try {
+        const url = new URL(candidate);
+        if (typeof window !== 'undefined' && window.location.protocol === 'https:' && url.protocol === 'http:') {
+            url.protocol = 'https:';
+        }
+        return url.toString().replace(/\/$/, '');
+    } catch {
+        return DEFAULT_WP_API_URL;
+    }
+}
+
+const WP_API_URL = normalizeWpApiUrl(import.meta.env.VITE_WP_API_URL || DEFAULT_WP_API_URL);
 
 export interface WPPage {
     id: number;
