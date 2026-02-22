@@ -1,19 +1,56 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Amorok Frontend (Vite + React)
 
-# Run and deploy your AI Studio app
+## Requirements
 
-This contains everything you need to run your app locally.
+- Node.js 18+
+- npm
 
-View your app in AI Studio: https://ai.studio/apps/drive/1iEhkguYCJpJ5End4OVcVgk6FvSNHGGYH
+If you use `nvm` or `fnm`, run `nvm use` / `fnm use` from repo root first.
 
-## Run Locally
+## Run locally
 
-**Prerequisites:** Node.js (v18 or later). The project root has an [.nvmrc](../.nvmrc) file—if you use [nvm](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schniz/fnm), run `nvm use` or `fnm use` in the repo root so the correct Node version is active.
+From `app/`:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+npm run dev
+```
+
+Or from repository root:
+
+```bash
+npm --prefix app install
+npm --prefix app run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+Build artifacts are written to `build/`.
+
+## Preview production build
+
+```bash
+npm run preview
+```
+
+## Environment
+
+Create `app/.env.local` with at least:
+
+```dotenv
+VITE_WP_API_URL=https://your-wordpress-site.com/wp-json/wp/v2
+```
+
+Important: use `https://` for production to avoid mixed-content blocks.
+
+## Deploy
+
+Project is configured for Vercel via repository root `vercel.json`.
+
+- Build command: `npm --prefix app run build`
+- Output directory: `app/build`
+- SPA rewrites: all routes -> `index.html`
