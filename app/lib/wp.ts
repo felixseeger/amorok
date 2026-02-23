@@ -1,4 +1,4 @@
-const DEFAULT_WP_API_URL = 'https://your-wordpress-site.com/wp-json/wp/v2';
+const DEFAULT_WP_API_URL = 'https://amorok-back.felixseeger.de/wp-json/wp/v2';
 
 function normalizeWpApiUrl(rawUrl: string): string {
     const candidate = (rawUrl || '').trim() || DEFAULT_WP_API_URL;
